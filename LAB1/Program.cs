@@ -153,6 +153,82 @@ namespace LAB1
             sb.AppendFormat("A");
             Console.WriteLine(sb);
             */
+            /*//Массивы
+            int[,] numbers = { { 1, 2, 3 }, { 4, 5, 6 } };
+
+            int rows = numbers.GetUpperBound(0) + 1;    // количество строк
+            int columns = numbers.Length / rows;        // количество столбцов
+                                                       
+                                                       
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{numbers[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+
+
+           *//* //Массив строк
+            string [] strar = { "bababa", "nananan", "lalalala" };
+            Console.WriteLine("Cодержимое массива: ");
+            foreach (string s in strar)
+                Console.WriteLine(s);
+            Console.WriteLine($"Длинна массива строк: {strar.Length}");
+            Console.WriteLine("Введите элемент на замену: ");
+            int numb = (Convert.ToInt32(Console.ReadLine()));
+            for(int k=0; k<strar.Length; k++)
+            {
+                if(k==numb-1)
+                {
+                    Console.WriteLine("Введите замену элемента: ");
+                    strar[k] = Convert.ToString(Console.ReadLine());
+                }
+            }
+            Console.WriteLine("Cодержимое массива после замены: ");
+            foreach (string s in strar)
+                Console.WriteLine(s);
+            //ступенчатый массив
+            int [][] stup = new int[3][];
+            stup[0] = new int[2];
+            stup[1] = new int[3];
+            stup[2] = new int[4];
+            for(int i = 0; i<2; i++)
+            {
+                Console.WriteLine("Введите " + (i+1) + " элемент первой строки");
+                stup[0][i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Введите " + (i + 1) + " элемент второй строки");
+                stup[1][i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Введите " + (i + 1) + " элемент третьей строки");
+                stup[2][i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Ступенчатый массив:");
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Write(stup[0][i]+ " ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write(stup[1][i] + " ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < 4; i++)
+            {
+                Console.Write(stup[2][i] + " ");
+            }
+            Console.WriteLine();
+            //Неявные массивы
+            var ntarr  = new[] { 1, 2, 3 };
+            var ntstr = new[] { "1", "rt" };*/
                 }
             }
         }
