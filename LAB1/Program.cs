@@ -100,6 +100,59 @@ namespace LAB1
             Console.WriteLine($"Null-переменная(null):{nlb}");
             nlb = 123;
             Console.WriteLine($"Null-переменная(int):{nlb}");
+
+              //Строковые литералы
+            string cmp1 = "A";
+            string cmp2 = "B";
+
+            int result = string.Compare(cmp1, cmp2);
+            if (result > 0)
+            {
+                Console.WriteLine("Строка 1 больше строки 2");
+            }
+            else if (result < 0)
+            {
+                Console.WriteLine("Строка 2 больше строки 1");
+            }
+            else
+            {
+                Console.WriteLine("Строки равны");
+            }
+
+            //Работа над string
+            string s1, s2, s3;
+            s1 = "hello";
+            s2 = "world";
+            s3 = "bye";
+            string coll = s1 + ' ' + s2;
+            Console.WriteLine($"Сцепление строк:{coll}");
+            string substr = coll.Substring(0, coll.IndexOf(" "));
+            Console.WriteLine($"Подстрока:{substr}");
+            string [] words = coll.Split(' ');
+            foreach (string s in words)
+            {
+                Console.WriteLine($"Слово:{s}");
+            }
+            string insert = coll.Insert(coll.IndexOf(' ') + 1, s3 + ' ');
+            Console.WriteLine($"Cтрока:{insert}");
+            string remove = insert.Remove(insert.IndexOf(' '), insert.IndexOf(' ')-1);
+            Console.WriteLine($"Cтрока после удаления:{remove}");
+            //Null - строка
+            string snull = null;
+            bool test = String.IsNullOrEmpty(snull);
+            Console.WriteLine(test);
+            snull = "A";
+            test = String.IsNullOrEmpty(snull);
+            Console.WriteLine(test);
+
+            //SB
+            StringBuilder sb = new StringBuilder("Привет мир");
+            sb.Remove(1, 1);
+            sb.Remove(3,1);
+            sb.Insert(1, 'A');
+            sb.AppendFormat("A");
+            Console.WriteLine(sb);
+            */
                 }
             }
         }
