@@ -274,6 +274,41 @@ namespace LAB1
                 return tuple;
             }
             Console.WriteLine("Кортеж: "+tuple);*/
+              /*//Checked & unchecked
+            static void Local1()
+            {
+                try
+                {
+                    checked
+                    {
+                        int num = int.MaxValue;
+                        Console.WriteLine(num+1);
+                    }
+                }
+                catch(OverflowException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+               
+            }
+            static void Local2()
+            {
+                try
+                {
+                    unchecked
+                    {
+                        int num = int.MaxValue;
+                        Console.WriteLine(num+1);
+                    }
+                }
+                catch(OverflowException e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                
+            }
+            Local1();//При использовании checked выдаётся ошибка переподнения при unchecked мы пропускаем ошибку и все биты выского порядка обнунляются
+            Local2();*/
                 }
             }
         }
