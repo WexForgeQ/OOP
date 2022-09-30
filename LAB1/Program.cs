@@ -229,6 +229,25 @@ namespace LAB1
             //Неявные массивы
             var ntarr  = new[] { 1, 2, 3 };
             var ntstr = new[] { "1", "rt" };*/
+
+             /*  //Кортежи
+              (int, string, char, string, ulong) t = (1, "rr", '1', "yy", 4294967293);
+              Console.WriteLine("Кортеж:");
+              Console.Write(t);
+              Console.WriteLine();
+              Console.WriteLine("Первый элемент кортежа: " + t.Item1);
+              Console.WriteLine("Второй элемент кортежа: " + t.Item2);
+              (int num1, int num2) t2 = (1, 2);
+              (int, int) t3 = (1, 3);
+              bool rez = t2==t3;
+              Console.WriteLine(rez);
+              //Распаковка кортежа
+              int unb1 = t2.num2;
+              int unb2 = t3.Item1;
+              Console.WriteLine("Распакованные переменные кортежа: " + unb1 + " " + unb2);
+              Console.WriteLine("Кортеж с неназначенной переменной: ");
+              (int? _, int) nlv = (null, 1);
+              Console.WriteLine(nlv);*/
                 }
             }
         }
