@@ -154,7 +154,7 @@ namespace LAB1
             Console.WriteLine(sb);
             */
 
-            /*//Массивы
+            /*//#5Массивы
             int[,] numbers = { { 1, 2, 3 }, { 4, 5, 6 } };
 
             int rows = numbers.GetUpperBound(0) + 1;    // количество строк
