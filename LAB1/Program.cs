@@ -248,6 +248,32 @@ namespace LAB1
               Console.WriteLine("Кортеж с неназначенной переменной: ");
               (int? _, int) nlv = (null, 1);
               Console.WriteLine(nlv);*/
+
+               /*//Локальная функция
+            string s = "Tuple";
+            var tuple = LocalFunc(new int[] { 10, 11, 24, 43, 2 }, s);
+            static (int max , int min, int sum, char flt) LocalFunc(int [] arr, string s)
+            {
+                int max = -2147483648;
+                int min = 2147483647;
+                int sum = 0;
+                for(int i=0; i<5;i++)
+                {
+                    if(arr[i]>max)
+                    {
+                        max = arr[i];
+                    }
+                    if(arr[i]<min)
+                    {
+                        min = arr[i];
+                    }
+                    sum = sum + arr[i];
+                }
+                char flt = s[0];
+                var tuple = (max, min, sum, flt);
+                return tuple;
+            }
+            Console.WriteLine("Кортеж: "+tuple);*/
                 }
             }
         }
