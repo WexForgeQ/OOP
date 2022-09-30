@@ -119,7 +119,7 @@ namespace LAB1
                 Console.WriteLine("Строки равны");
             }
 
-            //Работа над string
+            //#4Работа над string
             string s1, s2, s3;
             s1 = "hello";
             s2 = "world";
