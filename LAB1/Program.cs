@@ -89,7 +89,7 @@ namespace LAB1
             ushort unpush = (ushort)o12;  
              *//*
 
-            //Неявно типизированная переменная
+            //#3Неявно типизированная переменная
             var tpvi = 10;
             Console.WriteLine($"Неявно типиизрованная переменная(int):{tpvi}");
             var tpvch = 'H';
