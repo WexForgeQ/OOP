@@ -7,9 +7,9 @@ namespace LAB1
     {
         static void Main(string[] args)
         {
+
             /*
-             
-            //Объявления типов
+             //Объявления типов
             Console.WriteLine("Enter bool");
             bool b = Convert.ToBoolean(Console.ReadLine());
             Console.WriteLine(b);
